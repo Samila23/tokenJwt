@@ -1,6 +1,7 @@
 package com.token.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +18,9 @@ public class tokenController {
 	
 	
 	@GetMapping("")
-	public Boolean getAll2(@RequestHeader("Authorization") String authorizationHeader) {
+	public ResponseEntity<Boolean> validToken(@RequestHeader("Authorization") String authorizationHeader) {
 		String a = authorizationHeader;
-		return clienteService.validateTokenAndGetClaims(authorizationHeader);
+		return ResponseEntity.ok(clienteService.validateTokenAndGetClaims(authorizationHeader));
 	}
 
 }

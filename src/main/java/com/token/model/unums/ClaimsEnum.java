@@ -26,7 +26,7 @@ public enum ClaimsEnum {
 				return true;
 			}
 		}
-		logger.info("ClaimsRoleEnum - validateRole() - INVALID ");
+		logger.info("ClaimsRoleEnum - findByClaims() - INVALID ");
 		return false;
 	}
 

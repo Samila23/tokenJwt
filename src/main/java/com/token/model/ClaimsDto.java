@@ -5,14 +5,7 @@ public class ClaimsDto {
 	private String Role;
 	private String Seed;
 
-	
 	public ClaimsDto() {
-	}
-	public ClaimsDto(String name, String role, String seed) {
-		super();
-		this.name = name;
-		Role = role;
-		Seed = seed;
 	}
 	public String getName() {
 		return name;
