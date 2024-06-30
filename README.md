@@ -5,7 +5,7 @@ Esta API Rest é responsável por validar token JWT.
 
 ### Getting Started
 
-* Java 11
+* Java 17
 * Maven
 * SpringBoot
 * Junit
